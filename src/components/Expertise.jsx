@@ -25,7 +25,7 @@ const Expertise = () => {
   ];
   return (
     <>
-      <div className="mt-2">
+      <div className="mt-2" id="skills">
         <h1 className=" mb-16 text-4xl font-bold underline  text-center">
           My Expertise
         </h1>
@@ -54,13 +54,9 @@ const Expertise = () => {
                 build something amazing! Hire me and let's make great things
                 happen!
               </p>
-              <button className=" text-2xl px-4 py-2 bg-orange-500 rounded-full shadow-lg">
-                Hire Me
-              </button>
             </div>
           </div>
           <div className="flex justify-center w-full">
-            {/* skills container */}
             <div className="flex justify-center w-2/3 h-fit space-x-3  flex-wrap">
               {expertizeData.map((data) => (
                 <p className="bg-gray-300 w-fit px-3 py-2 mt-1 rounded-full hover:bg-orange-500 cursor-pointer">

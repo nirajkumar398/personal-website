@@ -2,6 +2,33 @@ import React, { useEffect, useRef } from "react";
 import profileIcon from "../assets/images/profile_icon.png";
 import bannerImage from "../assets/images/banner_wallpaper.svg";
 import Typed from "typed.js";
+const socialMediaLinks = [
+  {
+    id: 1,
+    iconClass: "fa-brands fa-linkedin",
+    url: "https://www.linkedin.com/in/niraj-kumar-18478518a/",
+  },
+  {
+    id: 2,
+    iconClass: "fa-solid fa-envelope",
+    url: "mailto:kumar.niraj.nita@gmail.com",
+  },
+  // {
+  //   id: 3,
+  //   iconClass: "fa-brands fa-twitter",
+  //   url: "https://www.twitter.com",
+  // },
+  {
+    id: 4,
+    iconClass: "fa-brands fa-facebook",
+    url: "https://www.facebook.com/profile.php?id=100011286643409&mibextid=LQQJ4d",
+  },
+  {
+    id: 5,
+    iconClass: "fa-brands fa-instagram",
+    url: "https://www.instagram.com/_nirajkumar236?igsh=MXR2eGFnZndoN2QyZw%3D%3D&utm_source=qr",
+  },
+];
 
 const Banner = () => {
   const el = useRef(null);
@@ -15,8 +42,8 @@ const Banner = () => {
       ], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 100,
-      typeSpeed: 50,
-      backSpeed: 10,
+      typeSpeed: 100,
+      backSpeed: 50,
       backDelay: 100,
       loop: true,
     });
@@ -51,33 +78,27 @@ const Banner = () => {
             effective solutions.
           </p>
           <div className="flex space-x-3">
-            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
-              <i class="fa-brands fa-linkedin text-2xl"></i>
-            </a>
-            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
-              <i class="fa-brands fa-twitter text-2xl"></i>
-            </a>
-            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
-              <i class="fa-brands fa-facebook text-2xl"></i>
-            </a>
-            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
-              <i class="fa-brands fa-instagram text-2xl"></i>
-            </a>
+            {socialMediaLinks.map((socialMediaLink) => (
+              <a
+                className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex"
+                href={socialMediaLink.url}
+                key={socialMediaLink.id}
+              >
+                <i class={`${socialMediaLink.iconClass} text-2xl`}></i>
+              </a>
+            ))}
           </div>
           <br />
           <a
-            href="/contact"
+            href="/personal-website/contact"
             className="animate-pulse px-12 py-4 text-1.5xl bg-orange-600 rounded-full shadow-lg hover:bg-red-500 font-semibold"
           >
             Contact Me
           </a>
         </div>
       </div>
-      <div className="w-full flex justify-center h-60">
-        <div className="relative w-48 h-48">
+      <div className="w-full flex justify-center h-full">
+        <div className="">
           <img
             src={profileIcon}
             className="rounded-full shadow-lg w-full h-full object-cover"
