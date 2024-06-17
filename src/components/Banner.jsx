@@ -55,6 +55,9 @@ const Banner = () => {
               <i class="fa-brands fa-linkedin text-2xl"></i>
             </a>
             <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">
               <i class="fa-brands fa-twitter text-2xl"></i>
             </a>
             <a className="hover:bg-blue-500 border cursor-pointer bg-gray-800 px-4 py-4 w-12 h-12 rounded-full justify-center items-center flex">

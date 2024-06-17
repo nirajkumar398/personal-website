@@ -35,7 +35,10 @@ const Header = () => {
     link: "/hire-me",
   });
   return (
-    <div className="bg-orange-200 h-12 main flex justify-between items-center px-4 py-12">
+    <div
+      className="h-12 main flex justify-between items-center px-4 py-12"
+      style={{ background: "linear-gradient(135deg, #1079bf, #85C1E9)" }}
+    >
       <div> {brandName}</div>
       <div className="space-x-4">
         {menuLinks.map((menuLink) => (
