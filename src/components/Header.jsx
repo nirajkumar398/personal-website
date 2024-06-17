@@ -22,7 +22,7 @@ const Header = () => {
     },
   ];
 
-  const [actionButton] = useState({ title: "Hire Me", link: "/hire-me" });
+  const [actionButton] = useState({ title: "Download Resume", link: "https://drive.google.com/file/d/12aOfXw5SmITU2HLHInT_bqNOYsQuj89x/view?usp=drive_link" });
   const handleScrollToTop = (event) => {};
 
   return (
@@ -39,7 +39,7 @@ const Header = () => {
         }}
         id="home"
       >
-        <div>{brandName}</div>
+        <div className="bg-white text-2xl px-8 py-2 rounded-lg">{brandName}</div>
         <div className="space-x-4 flex">
           {menuLinks.map((menuLink) => (
             <span className="items-center flex" key={menuLink.id}>
@@ -60,7 +60,7 @@ const Header = () => {
         <div>
           <a
             href={actionButton.link}
-            className="bg-orange-600 px-4 py-2 rounded"
+            className="bg-orange-600 px-4 py-2 rounded text-white text-1xl font-semibold shadow-2xl"
           >
             {actionButton.title}
           </a>
