@@ -4,9 +4,9 @@ import aboutUs from "../assets/images/aboutUs.png";
 const About = () => {
   return (
     <div
-      className="main-container py-8 border-spacing-1"
+      className="main-container py-8"
       id="about"
-      style={{ background: "#f5ebde", borderTop: "1px solid black", padding: "32px 10%", borderWidth: "calc(100% - 100px)" }}
+      style={{ background: "#f5ebde", borderTop: "1px solid black", padding: "32px 10%"}}
     >
       <h1 className="font-bold underline text-4xl text-center">About</h1>
       <div className="flex py-8 justify-center items-center">
