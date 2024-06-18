@@ -48,7 +48,7 @@ const Header = () => {
                 to={menuLink.link}
                 smooth={true}
                 duration={500}
-                offset={-70} // Adjust this value to account for the fixed header height
+                offset={-96} // Adjust this value to account for the fixed header height
                 className="hover:text-orange-600 cursor-pointer"
                 onClick={handleScrollToTop}
               >

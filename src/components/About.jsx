@@ -1,17 +1,22 @@
 import React from "react";
-import profileIcon from "../assets/images/profile_icon.png";
+import aboutUs from "../assets/images/aboutUs.png";
 
 const About = () => {
   return (
     <div
       className="main-container py-8 border-spacing-1"
       id="about"
-      style={{ background: "f5ebde", borderTop: "1px solid black" }}
+      style={{ background: "#f5ebde", borderTop: "1px solid black", padding: "32px 10%", borderWidth: "calc(100% - 100px)" }}
     >
       <h1 className="font-bold underline text-4xl text-center">About</h1>
-      <div className="flex px-4 py-8">
-        <div className="w-full flex justify-center rounded-full">
-          <img src={profileIcon} className="w-36 h-36 rounded-full" />
+      <div className="flex py-8 justify-center items-center">
+        <div className="h-full w-full relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center">
+            <img src={aboutUs} className="w-full h-full object-cover rounded-full" />
+            <div className="absolute inset-0 border-4 border-cyan-400 rounded-full animate-spin-slow flex justify-center items-center">
+              <div className="white-dot"></div>
+            </div>
+          </div>
         </div>
         <div className="w-full">
           <p className="animate-slide-in">
