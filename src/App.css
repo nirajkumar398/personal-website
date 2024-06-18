@@ -1,0 +1,26 @@
+/* Apply custom scrollbar styles to the entire document */
+body::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
+  
+  /* Track styles */
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color for the track */
+  }
+  
+  /* Handle styles */
+  body::-webkit-scrollbar-thumb {
+    background: #888; /* Color for the handle */
+    border-radius: 2px; /* Rounded corners for the handle */
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color for the handle on hover */
+  }
+
+  .zoom-effect:hover img {
+    transform: scale(1.5); /* Adjust the scale value as needed */
+    transition: transform 0.3s ease; /* Adjust the transition duration as needed */
+  }
+  

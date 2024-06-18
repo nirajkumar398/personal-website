@@ -30,7 +30,8 @@ const Expertise = () => {
         style={{
           borderTop: "1px solid black",
           paddingTop: "32px",
-          background: "#d6ddef",
+          background:
+            "linear-gradient(301deg, rgb(68, 173, 243), rgb(142, 68, 173))"
         }}
       >
         <h1 className=" mb-16 text-4xl font-bold underline  text-center">
@@ -42,8 +43,6 @@ const Expertise = () => {
           style={{
             // backgroundImage: `url(${bannerBackground})`,
             backgroundSize: "cover",
-            background:
-              "linear-gradient(135deg, rgb(68 173 243), rgb(142, 68, 173))",
           }}
           className="box-container items-center flex py-8"
         >

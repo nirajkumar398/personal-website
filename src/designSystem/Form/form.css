@@ -9,7 +9,7 @@
     font-weight: bold;
   }
   
-  input {
+  textarea, input {
     width: calc(100% - 10px);
     padding: 8px !important;
     border: 1px solid #ccc;
@@ -19,8 +19,11 @@
     margin: 0px 2px;
 
   }
+  textarea {
+    height: 100px;
+  }
   
-  input:focus {
+  textarea, input:focus {
     border:1px solid #0078DB;
   }
   
@@ -42,4 +45,53 @@
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
+  
+  .footer-container {
+    background-color: #f3f4f6;
+    border-top: 1px solid #e5e7eb;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .footer-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .footer-link-text {
+    font-size: 1rem;
+  }
+  
   

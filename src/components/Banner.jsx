@@ -3,6 +3,7 @@ import profileIcon from "../assets/images/profile_icon.png";
 import bannerImage from "../assets/images/banner_wallpaper.svg";
 import Typed from "typed.js";
 import Contact from "./Contact";
+
 const socialMediaLinks = [
   {
     id: 1,
@@ -40,8 +41,7 @@ const Banner = () => {
         "Frontend Developer",
         "Backend Developer",
         "Full Stack Developer",
-      ], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
+      ],
       startDelay: 100,
       typeSpeed: 100,
       backSpeed: 50,
@@ -49,7 +49,6 @@ const Banner = () => {
       loop: true,
     });
 
-    // Destropying
     return () => {
       typed.destroy();
     };
@@ -85,7 +84,7 @@ const Banner = () => {
                 href={socialMediaLink.url}
                 key={socialMediaLink.id}
               >
-                <i class={`${socialMediaLink.iconClass} text-2xl`}></i>
+                <i className={`${socialMediaLink.iconClass} text-2xl`}></i>
               </a>
             ))}
           </div>
@@ -94,10 +93,11 @@ const Banner = () => {
         </div>
       </div>
       <div className="w-full flex justify-center h-full">
-        <div className="">
+        <div className="rounded-full border-4 border-blue-500 zoom-effect">
           <img
             src={profileIcon}
             className="rounded-full shadow-lg w-full h-full object-cover"
+            alt="Profile"
           />
         </div>
       </div>

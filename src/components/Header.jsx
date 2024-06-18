@@ -57,7 +57,7 @@ const Header = () => {
             </span>
           ))}
         </div>
-        <div>
+        <div className="animate-bounce">
           <a
             href={actionButton.link}
             className="bg-orange-600 px-4 py-2 rounded text-white text-1xl font-semibold shadow-2xl"
