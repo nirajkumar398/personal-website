@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import profileIcon from "../assets/images/profile_icon.png";
 import bannerImage from "../assets/images/banner_wallpaper.svg";
 import Typed from "typed.js";
+import Contact from "./Contact";
 const socialMediaLinks = [
   {
     id: 1,
@@ -89,12 +90,7 @@ const Banner = () => {
             ))}
           </div>
           <br />
-          <a
-            href="/personal-website/contact"
-            className="animate-pulse px-12 py-4 text-1.5xl bg-orange-600 rounded-full shadow-lg hover:bg-red-500 font-semibold"
-          >
-            Contact Me
-          </a>
+          <Contact />
         </div>
       </div>
       <div className="w-full flex justify-center h-full">

@@ -25,7 +25,14 @@ const Expertise = () => {
   ];
   return (
     <>
-      <div className="mt-2" id="skills">
+      <div
+        id="skills"
+        style={{
+          borderTop: "1px solid black",
+          paddingTop: "32px",
+          background: "#d6ddef",
+        }}
+      >
         <h1 className=" mb-16 text-4xl font-bold underline  text-center">
           My Expertise
         </h1>
@@ -35,7 +42,8 @@ const Expertise = () => {
           style={{
             // backgroundImage: `url(${bannerBackground})`,
             backgroundSize: "cover",
-            background: "linear-gradient(135deg, rgb(68 173 243), rgb(142, 68, 173))",
+            background:
+              "linear-gradient(135deg, rgb(68 173 243), rgb(142, 68, 173))",
           }}
           className="box-container items-center flex py-8"
         >

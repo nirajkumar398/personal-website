@@ -14,7 +14,14 @@ const Services = () => {
   ]);
   return (
     <>
-      <div className="main-container py-14">
+      <div
+        className="main-container py-14"
+        style={{
+          padding: "32px 10%",
+          borderTop: "1px solid black",
+          background: "#eef9ee",
+        }}
+      >
         <h1 className="text-4xl font-bold text-center underline">
           My Services
         </h1>
