@@ -21,7 +21,7 @@ const Services = () => {
               Crafting responsive and dynamic websites using the latest web technologies. Specializing in creating seamless user experiences with React.js, HTML, and CSS.
             </p>
             <Link to="/personal-website/web-development">
-              <button className="px-3 py-2 bg-orange-500 text-2xl rounded-full shadow-lg">
+              <button className="px-3 py-2 bg-orange-500 text-1xl rounded-full shadow-lg mt-4 text-white font-semibold">
                 Learn More
               </button>
             </Link>
@@ -33,7 +33,7 @@ const Services = () => {
               Developing high-performance mobile applications with a focus on user experience and functionality. Expertise in React Native to deliver cross-platform solutions.
             </p>
             <Link to="/personal-website/app-development">
-              <button className="px-3 py-2 bg-orange-500 text-2xl rounded-full shadow-lg">
+              <button className="px-3 py-2 bg-orange-500 text-1xl rounded-full shadow-lg mt-4 text-white font-semibold">
                 Learn More
               </button>
             </Link>
@@ -45,7 +45,7 @@ const Services = () => {
               Building robust and scalable backend systems using Spring Boot and AWS. Ensuring secure, efficient, and maintainable server-side applications.
             </p>
             <Link to="/personal-website/backend-development">
-              <button className="px-3 py-2 bg-orange-500 text-2xl rounded-full shadow-lg">
+              <button className="px-3 py-2 bg-orange-500 text-1xl rounded-full shadow-lg mt-4 text-white font-semibold">
                 Learn More
               </button>
             </Link>
