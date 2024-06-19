@@ -42,11 +42,65 @@ body::-webkit-scrollbar {
   .white-dot {
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: orange;
     border-radius: 50%;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
+  
+  /* WebDevelopment.css */
+
+.construction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eef9ee; /* Light greenish background */
+  background-image: url('path/to/your/background-image.jpg'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.construction-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.construction-message {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.construction-details {
+  font-size: 1.2rem;
+  color: #777;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.construction-contact {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.construction-contact a {
+  color: #ff7f50; /* Coral color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.construction-contact a:hover {
+  text-decoration: underline;
+}
+
   

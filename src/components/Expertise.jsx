@@ -2,6 +2,7 @@ import bannerBackground from "../assets/images/banner_wallpaper.svg";
 const Expertise = () => {
   const expertizeData = [
     "C++/C",
+    "Java",
     "Data Structures",
     "Algorithms",
     "Design Principles",
@@ -13,6 +14,7 @@ const Expertise = () => {
     "CSS",
     "Webpack",
     "RestApi",
+    "Spring Boot",
     "AWS",
     "Agile Methodologies",
     "Database Management System",
@@ -21,7 +23,6 @@ const Expertise = () => {
     "Git",
     "Problem Solving",
     "Debuging Skills",
-    "Communication Skills",
   ];
   return (
     <>
@@ -37,7 +38,6 @@ const Expertise = () => {
         <h1 className=" mb-16 text-4xl font-bold underline  text-center">
           My Expertise
         </h1>
-        {/* box section */}
 
         <div
           style={{
@@ -65,8 +65,8 @@ const Expertise = () => {
           </div>
           <div className="flex justify-center w-full">
             <div className="flex justify-center w-2/3 h-fit space-x-3  flex-wrap">
-              {expertizeData.map((data) => (
-                <p className="bg-gray-300 w-fit px-3 py-2 mt-1 rounded-full hover:bg-orange-500 cursor-pointer">
+              {expertizeData.map((data, index) => (
+                <p className="bg-gray-300 w-fit px-3 py-2 mt-1 rounded-full hover:bg-orange-500 cursor-pointer" key={index}>
                   {data}
                 </p>
               ))}
