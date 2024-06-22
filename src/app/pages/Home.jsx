@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
+import Certificate from "../components/Certificate";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Projects />
       <Services />
       <Expertise />
+      <Certificate />
       <Footer />
     </>
   );

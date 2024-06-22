@@ -1,5 +1,5 @@
 import React from "react";
-import '../designSystem/Form/form.css';
+import "../designSystem/Form/form.css";
 
 const LINKS = [
   {
@@ -26,16 +26,15 @@ const LINKS = [
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div
+      className="footer-container"
+      style={{ background: "#e1e1e1", borderTop: "1px solid black" }}
+    >
       <div className="footer-content">
         <div className="footer-title">Coding Profile</div>
         <div className="footer-links">
           {LINKS.map((link, index) => (
-            <a
-              key={index}
-              href={link.url}
-              className="footer-link"
-            >
+            <a key={index} href={link.url} className="footer-link">
               <img
                 src={link.logo}
                 alt={`${link.title} Logo`}
