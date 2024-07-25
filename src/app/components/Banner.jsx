@@ -11,25 +11,25 @@ const socialMediaLinks = [
     url: "https://www.linkedin.com/in/niraj-kumar-18478518a/",
   },
   {
+    id: 3,
+    iconClass: "fa-brands fa-github",
+    url: "https://github.com/nirajkumar398",
+  },
+  {
     id: 2,
     iconClass: "fa-solid fa-envelope",
     url: "mailto:kumar.niraj.nita@gmail.com",
   },
   // {
-  //   id: 3,
-  //   iconClass: "fa-brands fa-twitter",
-  //   url: "https://www.twitter.com",
+  //   id: 4,
+  //   iconClass: "fa-brands fa-facebook",
+  //   url: "https://www.facebook.com/profile.php?id=100011286643409&mibextid=LQQJ4d",
   // },
-  {
-    id: 4,
-    iconClass: "fa-brands fa-facebook",
-    url: "https://www.facebook.com/profile.php?id=100011286643409&mibextid=LQQJ4d",
-  },
-  {
-    id: 5,
-    iconClass: "fa-brands fa-instagram",
-    url: "https://www.instagram.com/_nirajkumar236?igsh=MXR2eGFnZndoN2QyZw%3D%3D&utm_source=qr",
-  },
+  // {
+  //   id: 5,
+  //   iconClass: "fa-brands fa-instagram",
+  //   url: "https://www.instagram.com/_nirajkumar236?igsh=MXR2eGFnZndoN2QyZw%3D%3D&utm_source=qr",
+  // },
 ];
 
 const Banner = () => {
