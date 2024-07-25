@@ -20,7 +20,7 @@ const Services = () => {
             <p>
               Crafting responsive and dynamic websites using the latest web technologies. Specializing in creating seamless user experiences with React.js, HTML, and CSS.
             </p>
-            <Link to="/personal-website/web-development">
+            <Link to="/machine-coding">
               <button className="px-3 py-2 bg-orange-500 text-1xl rounded-full shadow-lg mt-4 text-white font-semibold">
                 Learn More
               </button>
